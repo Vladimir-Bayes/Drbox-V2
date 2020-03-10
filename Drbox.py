@@ -448,7 +448,8 @@ class DrBoxNet():
             return False, 0                                  
     
     def load_prenet(self):
-        data_list = np.load(PRETRAINED_NET_PATH).item()
+        # https: // github.com / davidsandberg / facenet / issues / 260
+        data_list = np.load(PRETRAINED_NET_PATH, encoding='latin1', allow_pickle=True).item()
         data_keys = data_list.keys()
         var_list = self.detector.vars
         for var in var_list:
