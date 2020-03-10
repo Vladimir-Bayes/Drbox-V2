@@ -16,7 +16,7 @@ import pickle
 TXT_DIR = './data' 
 INPUT_DATA_PATH = TXT_DIR + '/train'
 TEST_DATA_PATH = TXT_DIR + '/test'
-PRETRAINED_NET_PATH = "vgg16.npy"
+PRETRAINED_NET_PATH = "./data/vgg16.npy"
 SAVE_PATH = './result' 
 TRAIN_BATCH_SIZE = 8
 IM_HEIGHT = 300
