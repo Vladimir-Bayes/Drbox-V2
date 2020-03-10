@@ -3,7 +3,7 @@ import os.path
 import sys
 import random
 import numpy as np
-np.load('det1.npy')
+np.load('./det1.npy')
 from glob import glob
 import tensorflow as tf
 from model import *
