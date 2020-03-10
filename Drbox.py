@@ -3,7 +3,7 @@ import os.path
 import sys
 import random
 import numpy as np
-np.load('/det1.npy')
+np.load('det1.npy')
 # https://github.com/davidsandberg/facenet/tree/master/src/align
 from glob import glob
 import tensorflow as tf
@@ -16,7 +16,7 @@ import pickle
 TXT_DIR = './data' 
 INPUT_DATA_PATH = TXT_DIR + '/train'
 TEST_DATA_PATH = TXT_DIR + '/test'
-PRETRAINED_NET_PATH = "/vgg16.npy"
+PRETRAINED_NET_PATH = "vgg16.npy"
 SAVE_PATH = './result' 
 TRAIN_BATCH_SIZE = 8
 IM_HEIGHT = 300
