@@ -16,7 +16,7 @@ import pickle
 TXT_DIR = './data' 
 INPUT_DATA_PATH = TXT_DIR + '/train'
 TEST_DATA_PATH = TXT_DIR + '/test'
-PRETRAINED_NET_PATH = "./data/vgg16.npy"
+PRETRAINED_NET_PATH = "./vgg16.npy"
 SAVE_PATH = './result' 
 TRAIN_BATCH_SIZE = 8
 IM_HEIGHT = 300
@@ -452,7 +452,7 @@ class DrBoxNet():
     
     def load_prenet(self):
         # https: // github.com / davidsandberg / facenet / issues / 260
-        data_list = np.load(PRETRAINED_NET_PATH, allow_pickle=True).item()
+        data_list = np.load(PRETRAINED_NET_PATH,allow_pickle=True).item()
         data_keys = data_list.keys()
         var_list = self.detector.vars
         for var in var_list:
